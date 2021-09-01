@@ -13,7 +13,7 @@ export default function Day() {
 
     return (
         <>
-            <h2>Day {day.day}</h2>
+            <h2>Day {day}</h2>
             <table>
                 <tbody>
                     {wordList.map((word) => <Word key={word.id} word={word}/>)}
