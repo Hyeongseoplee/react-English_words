@@ -9,7 +9,7 @@ export default function Daylist() {
             {days.map((day) => {
                 return (
                 <li key={day.id}>
-                    <Link to={'/words/1'}>Day {day.day}</Link>
+                    <Link to={`/words/${day.day}`}>Day {day.day}</Link>
                 </li>
                 )
             })}

@@ -13,7 +13,7 @@ function App() {
           <Route path="/">
             <Daylist></Daylist>
           </Route>
-          <Route path="/words/1">
+          <Route path="/words/:day">
             <Day></Day>
           </Route>
       </main>
