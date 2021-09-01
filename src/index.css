@@ -55,6 +55,9 @@ a {
 .list_day {
   display: flex;
   flex-wrap: wrap;
+  background-color: #efefef;
+  border-radius: 10px;
+  justify-content: space-between;
 }
 
 .list_day li {

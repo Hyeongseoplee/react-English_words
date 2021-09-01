@@ -1,16 +1,21 @@
-import { Link } from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
 import Header from './components/Header';
-// import Daylist from './components/Daylist';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Daylist from './components/Daylist';
+import Day from './components/Day';
+
 
 function App() {
+
   return (
     <BrowserRouter>
       <main className="App">
         <Header/>
-        <Route>
-          <Route to="/"></Route>
-        </Route>
+          <Route path="/">
+            <Daylist></Daylist>
+          </Route>
+          <Route path="/words/1">
+            <Day></Day>
+          </Route>
       </main>
     </BrowserRouter>
 
